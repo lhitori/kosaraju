@@ -1,0 +1,7 @@
+Algorithme de Kosaraju-Sharir
+=============================
+
+make
+kosaraju 50 composantes.dot
+neato -Tpdf composantes.dot > composantes.pdf
+rm composantes.dot
