@@ -4,7 +4,6 @@
 
 #include "graphe.h"
 
-
 graphe* creer_grille(int taille) {
     graphe* g = initialiser_graphe(taille * taille);
 
@@ -85,7 +84,6 @@ info_sommet* parcours_profondeur(graphe* g, int* ordre) {
     return infos;
 }
 
-
 void echanger(int* a, int* b) {
     int tmp = *a;
     *a = *b;
@@ -153,9 +151,6 @@ void colorer_cfc(graphe* g, info_sommet* infos) {
         }
     }
 }
-
-
-
 
 int main(int argc, char* argv[]) {
     srand(time(NULL));

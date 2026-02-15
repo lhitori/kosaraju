@@ -1,6 +1,5 @@
 #include "graphe.h"
 
-
 struct sommet {
   int pos_x;
   int pos_y;
@@ -15,7 +14,6 @@ struct graphe {
 
   int** couleur_arc;
 };
-
 
 graphe* initialiser_graphe(int nb_sommet) {
   graphe* g = malloc(sizeof(graphe));
@@ -141,3 +139,4 @@ void transpose(graphe* g) {
 void modifier_couleur_arc(graphe* g, int s, int t, int couleur) {
   g->couleur_arc[s][t] = couleur;
 }
+
